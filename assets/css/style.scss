@@ -1,0 +1,280 @@
+/* Start Main*/
+
+//Colors
+$blackcolor : #000;
+$whitecolor : #fff;
+$redcolor : #d2232a;
+$greycolor :#D3D3D3;
+$bluecolor : #007bff;
+//Fonts
+$font-primary: "Times",
+"verdana",
+"serif",
+"Times New Roman";
+$font-secondary: 'Cairo',
+sans-serif;
+
+[class*='col-'] {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+body {
+    font-family: $font-primary;
+}
+
+hr {
+    border: 2px solid $blackcolor;
+}
+
+h3 {
+    color: $redcolor;
+    padding: 0;
+    font-weight: 600;
+}
+
+/* End Main */
+/* Start Header */
+.head-img {
+    img {
+        max-height: 100px;
+        width: 100%;
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+/* End Header */
+
+/* Start Navbar */
+.navbar {
+    background-color: $blackcolor !important;
+
+    .navbar-nav {
+        .active>.nav-link {
+            color: $redcolor;
+        }
+    }
+
+    .nav-item {
+        .nav-link {
+            color: $whitecolor;
+        }
+
+        .nav-link:hover {
+            color: $redcolor;
+        }
+    }
+
+    .form-control {
+        border-radius: 0;
+        border: 0;
+    }
+
+    .form-inline {
+        .btn-outline-success {
+            color: $redcolor;
+            border: none;
+            right: 6px;
+        }
+
+        .btn-outline-success:hover {
+            color: $redcolor;
+            background-color: transparent;
+            border: none;
+        }
+
+        .btn-outline-success:active,
+        .btn-outline-success:focus {
+            box-shadow: none !important;
+            background-color: transparent;
+
+        }
+
+
+    }
+
+}
+
+.grayimg {
+    width: 100%;
+
+    li {
+        list-style: none;
+    }
+}
+
+/* End Navbar */
+
+/* Start News */
+.news {
+    .bigimg {
+        .bimg {
+            height: 410px;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .smallimgs {
+        &:last-child {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            @media only screen and (max-width: 767px) {
+                position: relative;
+            }
+        }
+
+        .imgall {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+
+.wordsdiv {
+    bottom: 0;
+    background: linear-gradient(to top, $blackcolor 10%, transparent);
+    height: 50%;
+    padding: 5px;
+
+    .words {
+        bottom: 10px;
+
+        h2 {
+            a {
+                font-family: $font-secondary;
+                font-weight: bold;
+                color: $whitecolor;
+                font-size: 20px;
+            }
+        }
+
+        p {
+            font-family: $font-primary;
+            font-weight: 500;
+            padding: 3px 10px;
+            font-size: 18px;
+            color: $whitecolor;
+
+            &.local {
+                background: $redcolor;
+            }
+
+            &.world {
+                background: $bluecolor;
+            }
+
+        }
+    }
+}
+
+/* End News */
+
+/* Start Egypt News Slider*/
+.slider {
+    .slide {
+        .slidbg {
+            height: 200px;
+            background-position: center;
+            background-size: cover;
+
+            .wordslider {
+                bottom: 0;
+                background: linear-gradient(to top, $blackcolor 10%, transparent);
+                padding: 5px;
+
+                a {
+                    font-weight: bold;
+                    color: $whitecolor;
+                    font-size: 14px;
+                    font-family: $font-secondary;
+                }
+
+            }
+        }
+    }
+
+    button,
+    html [type=button] {
+        color: $whitecolor;
+        background-color: $redcolor;
+        border-radius: 50%;
+        border-style: none;
+        padding: 11px 10px 9px 4px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .slick-prev {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        z-index: 2;
+        left: 20px;
+        outline: 0;
+    }
+
+    .slick-next {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        right: 20px;
+        outline: 0;
+    }
+}
+
+/* End Egypt News Slider*/
+
+/*Start Features*/
+.features {
+    overflow: hidden;
+
+    .singlefeatimg {
+        height: 220px;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.top5 {
+    ul {
+        List-style: none;
+        font-size: 20px;
+        font-weight: 700;
+        font-family: $font-secondary;
+        font-size: 15px;
+        padding: 0;
+
+        li {
+            border-left: 1px solid $blackcolor;
+            border-bottom: 1px solid $greycolor;
+            padding: 10px;
+
+            a {
+                color: $blackcolor;
+            }
+
+            .num {
+                background-color: $redcolor;
+                color: $whitecolor;
+                padding: 0px 10px;
+                margin: 8px;
+            }
+        }
+
+        li:first-child {
+            border-top: 1px solid $greycolor;
+        }
+    }
+}
+
+/*End Features*/
